@@ -1,0 +1,24 @@
+{
+  "name": "ninja-tests",
+  "version": "1.0.0",
+  "description": "Regression Tests",
+  "main": "index.js",
+  "scripts": {
+    "cy:verify": "$(npm bin)/cypress verify",
+    "cy:open": "$(npm bin)/cypress open",
+    "cy:runChromeProd": "$(npm bin)/cypress run --env configFile=production --browser chrome --config video=false",
+    "cy:runChromeDev": "$(npm bin)/cypress run --env configFile=development --browser chrome --config video=false",
+    "cy:runChromeProdHeadless": "$(npm bin)/cypress run --env configFile=production --browser chrome --headless",
+    "cy:runFirefoxProd": "$(npm bin)/cypress run --env configFile=production --browser firefox --config video=false",
+    "cy:runFirefoxDev": "$(npm bin)/cypress run --env configFile=development --browser firefox --config video=false"
+  },
+  "author": "Marcio Almeida",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.11.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "cypress-plugin-api": "^2.11.0"
+  }
+}

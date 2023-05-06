@@ -1,0 +1,13 @@
+node_modules
+cypress/videos
+cypress/screenshots
+report
+cucumber_report
+.DS_Store
+npm-debug.log
+tmp
+.projects
+*.orig
+.tmp
+logs
+*.log
